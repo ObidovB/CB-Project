@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
+import { LucideIcon } from "lucide-react";
 
 export interface Feature {
   id: number;
-  icon: ReactNode;
+  icon: LucideIcon;
   title: string;
   description: string;
 }
