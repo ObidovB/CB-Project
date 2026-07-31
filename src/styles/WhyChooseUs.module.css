@@ -1,0 +1,44 @@
+.section {
+    padding: 120px 20px;
+    background: #071A33;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.subtitle {
+    color: #00F2FE;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-top: 18px;
+    font-size: 56px;
+    color: white;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.description {
+    margin: 25px auto 0;
+    max-width: 700px;
+    color: #94A3B8;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}   

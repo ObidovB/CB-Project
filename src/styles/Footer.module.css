@@ -1,0 +1,134 @@
+.footer {
+    padding: 50px 0;
+}
+
+.footerComponent {
+    display: flex;
+}
+
+.footerContent {
+    display       : flex;
+    flex-direction: column;
+    gap           : 25px;
+}
+
+.footerContact {
+    width        : 220px;
+    display      : flex;
+    align-items  : center;
+    padding      : 15px;
+    gap          : 20px;
+    border-radius: 5px;
+    border       : 1px solid rgb(185, 181, 181);
+}
+
+.footerContact p {
+    color    : #00F2FE;
+    font-size: 16px;
+}
+
+.footerInfo {
+    display    : flex;
+    gap        : 125px;
+    margin-left: 30px;
+}
+
+.footerInfoBoxes h3 {
+    font-size    : 18px;
+    color        : white;
+    margin-bottom: 20px;
+}
+
+.footerInfoBoxes h3::after {
+    content         : "";
+    display         : block;
+    width           : 50px;
+    height          : 1.5px;
+    background-color: #00F2FE;
+    border-radius   : 5px;
+    margin-top      : 10px;
+}
+
+.footerInfoText::after {
+    content         : "";
+    display         : block;
+    width           : 50px;
+    height          : 1.5px;
+    background-color: #00F2FE;
+    border-radius   : 5px;
+    margin-top      : 10px;
+}
+
+.footerInfoBoxes ul {
+    display       : flex;
+    flex-direction: column;
+    gap           : 25px;
+    text-align    : left;
+}
+
+/* SCROLLUP BUTTON */
+.scrollTop {
+    position: fixed;
+
+    right : 35px;
+    bottom: 35px;
+
+    width : 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    border       : 1px solid rgba(0, 217, 255, .25);
+
+    background: linear-gradient(180deg,
+            #00D9FF 0%,
+            #00B4D8 100%);
+
+    color: #071A33;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(0, 217, 255, .25);
+
+    transition: all .35s ease;
+
+    z-index: 999;
+}
+
+.scrollTop:hover {
+    transform: translateY(-8px) scale(1.05);
+
+    box-shadow:
+        0 18px 40px rgba(0, 217, 255, .45);
+}
+
+.scrollTop:active {
+    transform: scale(.95);
+}
+
+.scrollTop::before {
+    content: "";
+
+    position: absolute;
+    inset   : -6px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 217, 255, .15);
+
+    filter: blur(12px);
+
+    z-index: -1;
+
+    opacity: 0;
+
+    transition: .35s;
+}
+
+.scrollTop:hover::before {
+    opacity: 1;
+}

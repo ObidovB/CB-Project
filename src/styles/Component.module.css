@@ -1,0 +1,576 @@
+.button {
+    padding      : 0px 10px;
+    border       : none;
+    border-radius: 10px;
+
+    text-align     : left;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    cursor    : pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.primary {
+    background: #00D9FF;
+    color     : black;
+}
+
+.outline {
+    background: transparent;
+    border    : 1px solid #00D9FF;
+    color     : #fff;
+}
+
+.icon {
+    color: inherit;
+    background: inherit;
+}
+
+.sm {
+    height   : 40px;
+    width    : 150px;
+    font-size: 14px;
+}
+
+.md {
+    height   : 50px;
+    width    : 200px;
+    font-size: 16px;
+}
+
+.lg {
+    height   : 60px;
+    width    : 250px;
+    font-size: 18px;
+}
+
+.iconRight {
+    transform: rotate(0deg);
+}
+
+.iconTopRight {
+    transform: rotate(-45deg);
+}
+
+/* HERO ******************************* */
+
+/* .hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    background: #071a33;
+
+    overflow: hidden;
+}
+
+
+.grid {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 242, 254, 0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 242, 254, 0.05) 1px,
+            transparent 1px
+        );
+
+    background-size: 120px 120px;
+
+    z-index: 1;
+}
+
+
+.lines {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 15%,
+            rgba(0,242,254,.15) 15.2%,
+            transparent 15.4%
+        ),
+
+        linear-gradient(
+            transparent 30%,
+            rgba(0,242,254,.15) 30.2%,
+            transparent 30.4%
+        );
+
+    z-index: 1;
+}
+
+
+.glowOne {
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    top: -250px;
+    right: -200px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            rgba(0,242,254,.20),
+            transparent 70%
+        );
+
+    filter: blur(120px);
+
+    z-index: 1;
+}
+
+.glowTwo {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    bottom: -250px;
+    left: -150px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            rgba(0,242,254,.12),
+            transparent 70%
+        );
+
+    filter: blur(100px);
+
+    z-index: 1;
+}
+
+
+.logoBackground {
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 700px;
+
+    font-weight: 800;
+
+    color: rgba(255,255,255,.02);
+
+    line-height: 1;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.content {
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 1340px;
+
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 0 20px;
+}
+
+.leftSide {
+    width: 50%;
+}
+
+.rightSide {
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(0,242,254,.25);
+
+    background: rgba(0,242,254,.08);
+
+    color: #00F2FE;
+}
+
+.title {
+    margin-top: 30px;
+
+    font-size: 96px;
+
+    line-height: .9;
+
+    font-weight: 800;
+
+    color: white;
+}
+
+.description {
+    margin-top: 30px;
+
+    max-width: 600px;
+
+    color: #94A3B8;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+} */
+
+.hero {
+    min-height     : 100vh;
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    gap            : 40px;
+    background     : #0A192F;
+}
+
+.leftSide {
+    width          : 50%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    gap            : 24px;
+}
+
+.badge {
+    width        : fit-content;
+    padding      : 8px 16px;
+    border-radius: 999px;
+    border       : 1px solid rgba(0, 217, 255, 0.3);
+    background   : rgba(0, 217, 255, 0.1);
+    color        : #00D9FF;
+    font-size    : 14px;
+}
+
+.title {
+    font-size  : 62px;
+    line-height: 1;
+    font-weight: 800;
+    color      : white;
+}
+
+.description {
+    max-width  : 600px;
+    font-size  : 18px;
+    line-height: 1.7;
+    color      : #94A3B8;
+}
+
+.actions {
+    display: flex;
+    gap    : 16px;
+}
+
+.stats {
+    display   : flex;
+    gap       : 48px;
+    margin-top: 20px;
+}
+
+.stats h3 {
+    color      : #00D9FF;
+    font-size  : 32px;
+    font-weight: 700;
+}
+
+.stats p {
+    color    : #94A3B8;
+    font-size: 14px;
+}
+
+.contactBar {
+    display                : flex;
+    align-items            : center;
+    justify-content        : space-between;
+    padding                : 18px 22px;
+    border-radius          : 18px;
+    background             : rgba(255, 255, 255, 0.08);
+    border                 : 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter        : blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow             : 0 10px 30px rgba(0, 0, 0, 0.25);
+    color                  : #fff;
+}
+
+.item {
+    display       : flex;
+    flex-direction: column;
+    gap           : 4px;
+}
+
+.item span {
+    font-size  : 14px;
+    font-weight: 500;
+}
+
+.item small {
+    font-size: 12px;
+    opacity  : 0.7;
+}
+
+.divider {
+    width     : 1px;
+    height    : 40px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* PRODUCT-CARD ******************************* */
+
+.card {
+    width         : 280px;
+    border        : 1px solid #E5E7EB;
+    border-radius : 20px;
+    padding       : 24px;
+    display       : flex;
+    flex-direction: column;
+    transition    : all .3s ease;
+    cursor        : pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width     : 100%;
+    height    : auto;
+    object-fit: contain;
+}
+
+.cardFonts {
+    display    : flex;
+    align-items: center;
+    gap        : 18px;
+}
+
+.cardTitle {
+    margin-top : 20px;
+    font-size  : 22px;
+    font-weight: 700;
+    color      : #fff;
+}
+
+.cardGrade {
+    margin-top : 8px;
+    color      : #fff;
+    font-size  : 15px;
+    font-weight: 600;
+}
+
+.cardDescription {
+    margin-top : 12px;
+    color      : #6B7280;
+    font-size  : 14px;
+    line-height: 1.6;
+    min-height : 70px;
+}
+
+.cardPrice {
+    margin-top : auto;
+    font-size  : 24px;
+    font-weight: 700;
+    color      : #00D9FF;
+}
+
+.cardFooter {
+    margin-top     : auto;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.cardArrow {
+    width        : 42px;
+    height       : 42px;
+    border       : none;
+    border-radius: 12px;
+    font-size    : 18px;
+    background   : transparent;
+    border       : 1px solid #EBE5E7EB;
+    color        : #00D9FF;
+    cursor       : pointer;
+    transition   : .3s;
+}
+
+.cardArrow:hover {
+    background: #EBE5E7EB;
+    color     : #000;
+}
+
+/* CONTACT-CARD ******************************* */
+
+
+.contactCardContainer {
+    width          : 100%;
+    border         : 1px solid #E5E7EB;
+    border-radius  : 20px;
+    padding        : 24px 50px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    transition     : all .3s ease;
+    cursor         : pointer;
+}
+
+.contactCard {
+    display       : flex;
+    flex-direction: column;
+    gap           : 10px;
+}
+
+.contactCardBar {
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+    margin-bottom : 20px;
+}
+
+.contactCardBar h2 {
+    width      : 378px;
+    font-size  : 36px;
+    font-weight: 700;
+    color      : #fff;
+}
+
+.contactCardBar p {
+    width    : 378px;
+    font-size: 14px;
+    color    : #ccc;
+}
+
+.contactCard input,
+.contactCard textarea {
+    width        : 320px;
+    padding      : 12px 16px;
+    border       : 1px solid #E5E7EB;
+    border-radius: 12px;
+    background   : transparent;
+    color        : #fff;
+}
+
+.formGroup {
+    display       : flex;
+    flex-direction: column;
+    gap           : 4px;
+    margin-bottom : 12px;
+}
+
+.submitButton {
+    padding      : 12px 24px;
+    border       : none;
+    border-radius: 12px;
+    background   : #00D9FF;
+    color        : #000;
+    font-size    : 16px;
+    font-weight  : 600;
+    cursor       : pointer;
+    transition   : .3s;
+}
+
+/* BANNER *************** */
+
+.banner {
+    width          : 100%;
+    max-width      : 1340px;
+    margin         : auto;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 35px 50px;
+    border         : 1px solid #E5E7EB;
+    border-radius  : 24px;
+}
+
+.bannerContent {
+    flex       : 1;
+    display    : flex;
+    align-items: center;
+    gap        : 18px;
+    position   : relative;
+    padding    : 0 25px;
+}
+
+.bannerContent::after {
+    content   : "";
+    position  : absolute;
+    right     : 0;
+    top       : 50%;
+    transform : translateY(-50%);
+    width     : 1px;
+    height    : 70px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.bannerContent:last-child::after {
+    display: none;
+}
+
+.iconBanner {
+    width          : 64px;
+    height         : 64px;
+    border-radius  : 50%;
+    background     : rgba(0, 242, 254, .08);
+    border         : 1px solid rgba(0, 242, 254, .15);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    color          : #00F2FE;
+    flex-shrink    : 0;
+}
+
+.bannerTexts h3 {
+    color        : white;
+    font-size    : 24px;
+    font-weight  : 700;
+    margin-bottom: 6px;
+}
+
+.bannerTexts p {
+    font-size  : 14px;
+    color      : #94A3B8;
+}
