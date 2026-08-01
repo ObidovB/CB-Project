@@ -65,4 +65,5 @@ export const products: Product[] = [
         price: "800.000",
         image: "/images/m100.png"
     },
+
 ]

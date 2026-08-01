@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         title: "Home",
-        href: "/app"
+        href: "/"
     },
     {
         title: "Products",

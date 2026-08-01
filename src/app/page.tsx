@@ -5,7 +5,7 @@ import WhyChooseUs from "@/sections/home/WhyChooseUs";
 import CalculatorSection from "@/sections/home/CalculatorSection";
 import Projects from "@/sections/home/Projects";
 import ContactCard from "@/components/ContactCard";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       <div className={styles.border} />
       <Banner />
       <div className={styles.border} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

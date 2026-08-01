@@ -9,7 +9,7 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className={styles.card}>
-      <Image src={product.image} alt={product.title} width={250} height={250} />
+      <Image src={product.image} alt={product.title} width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} />
 
       <div className={styles.cardFonts}>
         <h3 className={styles.cardTitle}>{product.title}</h3>

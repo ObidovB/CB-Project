@@ -1,9 +1,13 @@
 .footer {
-    padding: 50px 0;
+    max-width: 1340px;
+    margin: 0 auto;
+    width : 100%;
+    padding: 50px 50px;
 }
 
 .footerComponent {
     display: flex;
+    gap    : 15px;
 }
 
 .footerContent {
@@ -29,7 +33,7 @@
 
 .footerInfo {
     display    : flex;
-    gap        : 125px;
+    gap        : 100px;
     margin-left: 30px;
 }
 
