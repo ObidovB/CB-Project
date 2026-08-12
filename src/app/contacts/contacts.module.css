@@ -1,0 +1,276 @@
+.page {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 50px 80px;
+    color: #f5f7fb;
+}
+
+.border {
+    width        : 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin       : 50px 0px;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 32px 0;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(0, 217, 255, 0.12);
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    color: #00D9FF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.heroText h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+.heroText p {
+    margin: 0;
+    max-width: 620px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.primaryButton,
+.secondaryButton,
+.phoneLink,
+.cardLink {
+    transition: all 0.25s ease;
+}
+
+.primaryButton,
+.secondaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 22px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.primaryButton {
+    background: linear-gradient(135deg, #00D9FF 0%, #ffb000 100%);
+    color: #101828;
+    box-shadow: 0 14px 30px rgba(255, 176, 0, 0.22);
+}
+
+.secondaryButton {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #f5f7fb;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover,
+.phoneLink:hover,
+.cardLink:hover {
+    transform: translateY(-1px);
+}
+
+.phoneWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.phoneLabel {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.phoneLink {
+    display: inline-block;
+    width: fit-content;
+    color: #ffffff;
+    font-size: clamp(1.4rem, 2vw, 2.1rem);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.contactPanel {
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0.9), rgba(9, 14, 23, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: 0 28px 50px rgba(0, 0, 0, 0.22);
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    background: rgba(41, 196, 111, 0.12);
+    border: 1px solid rgba(41, 196, 111, 0.2);
+    color: #7ef0a5;
+    padding: 7px 12px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.statusDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #32d583;
+    box-shadow: 0 0 0 6px rgba(50, 213, 131, 0.1);
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.infoItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.infoLabel {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.infoItem strong {
+    font-size: 1.05rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 28px 24px;
+}
+
+.cardIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: rgba(255, 201, 61, 0.12);
+    color: #00D9FF;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.card p {
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+}
+
+.cardLink {
+    display: inline-block;
+    margin-top: 4px;
+    color: #00D9FF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 980px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .infoGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .primaryButton,
+    .secondaryButton {
+        width: 100%;
+    }
+
+    .contactPanel {
+        padding: 22px 18px;
+    }
+}

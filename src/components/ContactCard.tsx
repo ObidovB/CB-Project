@@ -58,7 +58,7 @@ export default function ContactCard() {
         </p>
       </div>
       <Image
-        src="/images/centralicon.png"
+        src="/images/centralicon2.png"
         alt="Central Icon"
         className={styles.centralIcon}
         width={300}
