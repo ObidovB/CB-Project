@@ -1,3 +1,4 @@
+import ContactCard from '@/components/ContactCard';
 import styles from './contacts.module.css';
 
 export default function ContactsPage() {
@@ -77,6 +78,8 @@ export default function ContactsPage() {
                     <p>We reply and coordinate timely for urgent deliveries and requests.</p>
                 </article>
             </section>
+            <div className={styles.border} />
+            <ContactCard />
             <div className={styles.border} />
         </main>
     );
