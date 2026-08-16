@@ -29,9 +29,9 @@ export default function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <Button>Order Concrete</Button>
+          <Button href="/contacts/">Order Concrete</Button>
 
-          <Button variant="outline" variantIcon="topRight">
+          <Button href="/products/" variant="outline" variantIcon="topRight">
             View Products
           </Button>
         </div>
