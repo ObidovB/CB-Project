@@ -22,7 +22,7 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
         {feature.description}
       </p>
 
-      <Button variant="outline" size="sm">
+      <Button variant="outline" size="sm" href="/about/">
         Learn More
       </Button>
     </div>

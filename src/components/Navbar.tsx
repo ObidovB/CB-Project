@@ -8,7 +8,9 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
-        <CentralBetonIcon />
+        <Link href="/" className={styles.logo}>
+          <CentralBetonIcon />
+        </Link>
         <ul>
           {navLinks.map((link) => {
             return (
