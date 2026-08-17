@@ -153,7 +153,14 @@
     }
 
     .card {
+        position: relative;
         height: 360px;
+    }
+
+    .iconButton {
+        position: absolute;
+        right: 18px;
+        border-radius: "50%";
     }
 }
 
@@ -183,6 +190,6 @@
     }
 
     .content h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 }

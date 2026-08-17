@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           <button className={styles.iconButton}>
-            <ArrowUpRight size={22} style={{ backgroundColor: "transparent" }} />
+            <ArrowUpRight size={22} />
           </button>
         </div>
       </div>
