@@ -126,6 +126,7 @@
 }
 
 .detailImage {
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,6 +240,12 @@
 
 /* Responsive Detail Page */
 @media (max-width: 968px) {
+    .productsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .detailContainer {
         grid-template-columns: 1fr;
         gap: 40px;

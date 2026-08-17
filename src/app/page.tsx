@@ -29,3 +29,6 @@ export default function Home() {
     </div>
   );
 }
+// 1) Dark and Light mode toggle
+// 2) Translator language toggle
+// 3) Transition ANIMATIONS for sections

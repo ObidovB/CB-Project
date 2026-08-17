@@ -138,3 +138,51 @@
 .card:hover .iconButton{
     transform:rotate(45deg) scale(1.1);
 }
+
+@media (max-width: 980px) {
+    .section {
+        padding: 80px 20px;
+    }
+
+    .title {
+        font-size: clamp(2.2rem, 6vw, 3.8rem);
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: 360px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 60px 16px;
+    }
+
+    .header {
+        margin-bottom: 36px;
+    }
+
+    .title {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .overlay {
+        padding: 18px;
+    }
+
+    .content h3 {
+        font-size: 22px;
+    }
+}

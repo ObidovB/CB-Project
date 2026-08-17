@@ -10,7 +10,7 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <>
-      <Link href={`/products/${product.id}`} style={{ color: "inherit", textDecoration: "none" }}>
+      <Link href={`/products/${product.id}`} style={{ color: "inherit", textDecoration: "none", }}>
         <div className={styles.card}>
           <Image src={product.image} alt={product.title} width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} />
 

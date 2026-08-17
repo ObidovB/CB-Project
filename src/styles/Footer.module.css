@@ -136,3 +136,39 @@
 .scrollTop:hover::before {
     opacity: 1;
 }
+
+@media (max-width: 980px) {
+    .footer {
+        padding: 32px 20px;
+    }
+
+    .footerComponent {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footerInfo {
+        margin-left: 0;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 24px 16px;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerContact {
+        width: 100%;
+    }
+
+    .footerInfoBoxes ul {
+        gap: 14px;
+    }
+}

@@ -17,6 +17,26 @@
     background: rgba(255, 255, 255, 0.08);
 }
 
+@media (max-width: 980px) {
+    .page {
+        padding: 0 24px;
+    }
+
+    .border {
+        margin: 32px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .page {
+        padding: 0 16px;
+    }
+
+    .border {
+        margin: 24px 0;
+    }
+}
+
 .footerBottom {
     display: flex;
     justify-content: space-between;

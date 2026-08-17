@@ -52,6 +52,7 @@ export default function ContactCard() {
     <div className={styles.contactCardContainer} id="banner">
       <div className={styles.contactCardBar}>
         <h2>Оставьте заявку, мы перезвоним и всё рассчитаем</h2>
+        <h3>Оставьте заявку, мы перезвоним и всё рассчитаем</h3>
         <p>
           Укажите свой номер, и наш менеджер свяжется с вами в течение 10 минут.
           Поможем выбрать бетон, рассчитаем объём и согласуем доставку

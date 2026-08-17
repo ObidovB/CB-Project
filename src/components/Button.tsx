@@ -36,7 +36,7 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={className}>
+      <Link href={href} className={className} onClick={onClick}>
         {children}
         {icon}
       </Link>

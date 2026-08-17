@@ -5,7 +5,7 @@ import styles from "@/styles/Component.module.css";
 export default function ProductsSection() {
   return (
     <div className={styles.section}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "20px" }}>
+      <div className={styles.sectionTT} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "20px" }}>
         <h2 style={{ color: "#fff" }}>Our Products</h2>
 
         <a href="/products" style={{ color: "#00D9FF", textDecoration: "none" }}>

@@ -41,4 +41,41 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-}   
+}
+
+@media (max-width: 980px) {
+    .section {
+        padding: 80px 20px;
+    }
+
+    .title {
+        font-size: clamp(2.4rem, 6vw, 4rem);
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 64px 16px;
+    }
+
+    .header {
+        margin-bottom: 42px;
+    }
+
+    .subtitle {
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}
