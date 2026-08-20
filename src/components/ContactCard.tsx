@@ -51,11 +51,16 @@ export default function ContactCard() {
   return (
     <div className={styles.contactCardContainer} id="banner">
       <div className={styles.contactCardBar}>
-        <h2>Оставьте заявку, мы перезвоним и всё рассчитаем</h2>
-        <h3>Оставьте заявку, мы перезвоним и всё рассчитаем</h3>
+        <h2>
+          Submit a request, and we’ll call you back to work out the details.
+        </h2>
+        <h3>
+          Submit a request, and we’ll call you back to work out the details.
+        </h3>
         <p>
-          Укажите свой номер, и наш менеджер свяжется с вами в течение 10 минут.
-          Поможем выбрать бетон, рассчитаем объём и согласуем доставку
+          Provide your phone number, and our manager will contact you within 10
+          minutes. We will help you choose the right concrete, calculate the
+          volume, and arrange delivery.
         </p>
       </div>
       <Image
@@ -69,14 +74,14 @@ export default function ContactCard() {
         <div className={styles.contactCard}>
           <input
             type="text"
-            placeholder="To'liq ismingiz"
+            placeholder="Full Name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             required
           />
           <input
             type="tel"
-            placeholder="+998 12 345 67 89"
+            placeholder="Phone Number"
             value={formData.phone}
             onChange={(e) =>
               setFormData({ ...formData, phone: e.target.value })
@@ -93,19 +98,19 @@ export default function ContactCard() {
             required
           />
           <div className={styles.formGroup}>
-              <textarea
+            <textarea
               id="opinion"
               rows={5}
               value={formData.opinion}
               onChange={(e) =>
                 setFormData({ ...formData, opinion: e.target.value })
               }
-              placeholder="Xabaringizni yozing..."
+              placeholder="Enter your message..."
               required
             ></textarea>
           </div>
           <button type="submit" className={styles.submitButton}>
-            Xabar yuborish
+            Submit Request
           </button>
           {status && <p className={styles.statusText}>{status}</p>}
         </div>

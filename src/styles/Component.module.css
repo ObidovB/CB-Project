@@ -19,21 +19,12 @@
     }
 }
 
-/* LINKS ******************************* */
-
-/* a {
-    text-decoration: none;
-    color: inherit;
-} */
-
-/* BUTTON ******************************* */
-
 .button {
     padding      : 0px 10px;
     border       : none;
     border-radius: 10px;
 
-    text-align     : left;
+    text-align     : center;
     display        : flex;
     justify-content: space-between;
     align-items    : center;
@@ -48,10 +39,21 @@
     color     : black;
 }
 
+.primary:hover {
+    background: #00B8E0;
+    transform: scale(1.01);
+}
+
 .outline {
     background: transparent;
     border    : 1px solid #00D9FF;
     color     : #fff;
+}
+
+.outline:hover {
+    color     : #00D9FF;
+    background: rgba(0, 217, 255, 0.1);
+    transform: scale(1.01);
 }
 
 .icon {
@@ -87,222 +89,12 @@
 
 /* HERO ******************************* */
 
-/* .hero {
-    position: relative;
-
-    min-height: 100vh;
-
-    background: #071a33;
-
-    overflow: hidden;
-}
-
-
-.grid {
-    position: absolute;
-
-    inset: 0;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 242, 254, 0.05) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(0, 242, 254, 0.05) 1px,
-            transparent 1px
-        );
-
-    background-size: 120px 120px;
-
-    z-index: 1;
-}
-
-
-.lines {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent 15%,
-            rgba(0,242,254,.15) 15.2%,
-            transparent 15.4%
-        ),
-
-        linear-gradient(
-            transparent 30%,
-            rgba(0,242,254,.15) 30.2%,
-            transparent 30.4%
-        );
-
-    z-index: 1;
-}
-
-
-.glowOne {
-    position: absolute;
-
-    width: 700px;
-    height: 700px;
-
-    top: -250px;
-    right: -200px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            rgba(0,242,254,.20),
-            transparent 70%
-        );
-
-    filter: blur(120px);
-
-    z-index: 1;
-}
-
-.glowTwo {
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    bottom: -250px;
-    left: -150px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            rgba(0,242,254,.12),
-            transparent 70%
-        );
-
-    filter: blur(100px);
-
-    z-index: 1;
-}
-
-
-.logoBackground {
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    font-size: 700px;
-
-    font-weight: 800;
-
-    color: rgba(255,255,255,.02);
-
-    line-height: 1;
-
-    user-select: none;
-
-    pointer-events: none;
-
-    z-index: 1;
-}
-
-
-.content {
-    position: relative;
-
-    z-index: 5;
-
-    max-width: 1340px;
-
-    margin: 0 auto;
-
-    min-height: 100vh;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 50px;
-
-    padding: 0 20px;
-}
-
-.leftSide {
-    width: 50%;
-}
-
-.rightSide {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    max-width: 540px;
-    margin-left: auto;
-}
-
-.rightSide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
-}
-
-.badge {
-    display: inline-flex;
-
-    align-items: center;
-
-    padding: 12px 24px;
-
-    border-radius: 999px;
-
-    border: 1px solid rgba(0,242,254,.25);
-
-    background: rgba(0,242,254,.08);
-
-    color: #00F2FE;
-}
-
-.title {
-    margin-top: 30px;
-
-    font-size: 96px;
-
-    line-height: .9;
-
-    font-weight: 800;
-
-    color: white;
-}
-
-.description {
-    margin-top: 30px;
-
-    max-width: 600px;
-
-    color: #94A3B8;
-
-    line-height: 1.8;
-
-    font-size: 18px;
-} */
-
 .hero {
-    /* min-height     : 100vh; */
     width          : 100%;
     display        : flex;
     align-items    : center;
     justify-content: space-between;
-    gap            : 40px;
-
-    padding: 30px 0px;
+    /* gap            : 50px; */
 }
 
 .leftSide {
@@ -348,7 +140,6 @@
     display   : flex;
     gap       : 48px;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
 .stats h3 {
